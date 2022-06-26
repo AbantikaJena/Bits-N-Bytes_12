@@ -1,28 +1,27 @@
 # Bits-N-Bytes_12
-Team name- Bits N Bytes
 
-Your readme file should include:
+<b>TITLE</b>
 
--   Titles and internal titles
+<li>Introduction</li>
+<li>Technologies</li>
+<li>launch</li>
+<li>Platform</li>
 
--   Introduction - the project's aim: 
-	It is like a summary which should describe in an interesting manner what's the project aim, and what problems does a given application solve. 
-	
--    Technologies: 
-	languages, libraries (with version), platform etc. 
-	
--    Launch:
-	How to install and run a project? Does a project has minimum hardware requirements?
+<br><b>INTRODUCTION</b></br>
 
 
-Consider also using additional elements such as: 
+<li>Handicrafts generates foreign exchange for the country and also preserves the cultural heritage.</li>
+<li>But during colonial rule the competition posed by the machine put a threat to handicrafts.</li>
+<li>It resulted in massive unemployment of rural and semi-urban areas and artisans turned towards agriculture for their livelihood and the handicraft industry declined.</li>
+<li> But now due to Globalization,integration of cultural system across the globe is easier.</li>
+<li>Still lack of globalization due to improper infrastucture which links buyers directly to the manufacturer we are lagging in the  2nd largest sector after Agriculture i.e. the Indian handloom sector.</li>
 
-    Table of contents: 
-    	In case of big documentation. 
-    	
-    Illustrations and/or examples of use:
-    	Examples from your project. 
-    	
-    Credits and any other information:
-    	Information on the author(s), contact, www and social media links, a type of license under which the code is made available or the information on how to contribute to a project. 
+
+<br><b>TECHNOLOGY</b></br>
+
+<li>To complete this project we have used HTML and CSS languages .</li>
+
+### PLATFORM 
+
+-VS code
 
