@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Indian handicraft  </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 25%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Explore a wide
+      selection of  <span class="w3-hide-small">craft</span> forms</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">>
+  <h3 class="w3-center" >THE INDIAN HANDICRAFT</h3>
+  <p class="w3-center"><em>Embrace the spirit of Indian handicraft industry </em></p>
+  <p class="w3-center"><em>Click on our products to see our vide variety of ranges </em></p>
+  <p></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p style="font-size: 20px"><b><i class="fa fa-user w3-margin-right"></i><a href = "dress_grid.html">Our Products</a></b></p><br>
+      <img src="data:image/jpeg;base64,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" 
+      alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <style>
+            
+            </style>
+      <p background-image=" url('https://images.app.goo.gl/v9UcUcEBWUUruSwP6')">
+        
+        An unparalleled legacy that spans millennia. Pure, authentic craft sourced from artisans across the Indian sub-continent. Our vast collection of over 80 different craft forms celebrates a heritage of some of the world’s oldest handicrafts.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">We're really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Embroidery</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Floral Collectionn</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i> Painstakingly handcrafted </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">90%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1000+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">10M+</span><br>
+    Items Sold
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1000+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">15000+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="https://cdn.shopify.com/s/files/1/2675/7366/products/ExclusiveSterlingSilverFiligreeCollarNecklace-Orchid-TICORCD02_360x.jpg?v=1631529157" 
+      style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn.shopify.com/s/files/1/2675/7366/products/JaipurBluePotteryCoffeeMugs_Setof2_-TurquoiseFlowers-GLKM02M_360x.jpg?v=1631903561"
+       style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn.shopify.com/s/files/1/2675/7366/products/BidriCraftCurio-ArabianJug-C3801X_360x.jpg?v=1631649820" 
+      style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn.shopify.com/s/files/1/2675/7366/products/TheFloralCollection-EmbroideredTowelSets_Hand_FaceTowels_Setof2_-AHCT1F1_360x.jpg?v=1643569362"
+       style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="https://media.istockphoto.com/photos/dhokra-handicraft-of-bengal-picture-id1256366525?k=20&m=1256366525&s=612x612&w=0&h=c13_UCc8GRywCk8eey1dz6MgNTi-bi18-voqM6YgdHA=" 
+      style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://media.istockphoto.com/photos/buddha-picture-id152963038?k=20&m=152963038&s=612x612&w=0&h=glJozyQIQlEpZy-2d1xFEsQl6vIUg7FJJXWQpJjerwY="
+       style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://media.istockphoto.com/photos/treasures-from-the-middle-east-picture-id140233681?k=20&m=140233681&s=612x612&w=0&h=gCva31b045dRyIzX8vBXgRWs3_wVJejp9r-HM9mrGzA="
+       style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://media.istockphoto.com/photos/mother-and-daughter-is-sewing-on-a-machine-together-picture-id1184545884?k=20&m=1184545884&s=612x612&w=0&h=TJpQZ5dGByX_5aR_he0DDg7UFmr1Z4UYtORtfrSciDk="
+       style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">Login for more info</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>We'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">a
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Bhubaneswar<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 91 123456<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: bytes@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Developed by Team BITS N BYTES</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

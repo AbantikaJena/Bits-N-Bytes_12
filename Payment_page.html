@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment_page</title>
+    <link rel="stylesheet" href="Style_Payment_page.css">
+</head>
+<body style="color: white; font-family: Gill Sans, sans-serif"> 
+    <header>
+        <h1><em><u>Payment Gateway</u></em></h1>
+    </header>
+    <main>
+        <p>Required field followed by *</p>
+        <p>
+            <h2><em><u>Contact Information</u></em></h2>
+            <p>Name : * <input type="text" name="name" required></p>
+            <p>Contact : * <input type="number" name="contact" required></p>
+            <p>Address : <textarea name="address" id="adress" cols="50" rows="5"></textarea></p>
+            <p>Email : * <input type="email" name="email" id="email" required></p>
+            <p>Pincode : * <input type="number" name="pincode" id="pincode" required></p>
+        </p>
+
+        
+        <p>
+            <h2><em><u>Payment Option</u></em></h2>
+            <p>
+            <input type="radio" name="Payment" id="Card" required> <a href="card.html" >Card</a> 
+            <br>
+            <input type="radio" name="Payment" id="cod" required> <a href="Payment_Done.html" >Cash on Delivery</a>
+            <br>
+            <input type="radio" name="Payment" id="upi" required> <a href="upi.html" >UPI</a>
+            </p>
+            <p> <form action = "Payment_Done.html"><button class = "button" type="submit" data-inline="true">Pay Now</button></form>  <form action = "Payment_page.html"><button class = "button" type="reset"  data-inline="true">Reset</button></form></p>
+        </p>
+    
+    </main>
+</body>
+</html>
